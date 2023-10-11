@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue !important;
+}
+/* commom css **/
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none !important;
+}
+/* nav css **/
+.navbar{
+    background: #494545 !important;
+    overflow: auto;
+}
+.navbar ul>li{
+padding-inline: 10px;
+}
+.hireme{
+    background: #A41B1B !important;
+    transform: skewX(-25deg);
+    padding-inline: 20px;
+}
+#element{
+    display: inline;
+}
+.typed-cursor{
+    font-size: 35px;
+}
+.banner{
+    background: url('/images/Rectangle\ 3.png'), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-block: 150px;
+    background-attachment: fixed;
+}
+.go-profile{
+    padding: 10px;
+    border: 1px solid #ffff;
+    border-radius: 25px;
+    flex-shrink: 0;
+
+}
+.go-profile:is(:hover,:focus){
+    background: #A41B1B !important;
+    border: none;
+}
+.about{
+    background: #494545;
+}
+.about h2{
+    text-align: center;
+    padding-block: 20px;
+
+}
+.description p{
+    text-align: justify;
+}
+.my-photo img{
+    width: 100%;
+    height: 400px;
+}
+.contact-me{
+    border: 1px solid #ffff;
+    padding: 7px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.contact-me:is(:hover,:focus){
+    border: none;
+    background: #A41B1B;
+}
+.social-media{
+    display: flex;
+    padding-block: 30px;
+}
+.social-media .social-icon{
+    width: 70px;
+    padding-inline: 10px;
+}
+.my-skill{
+    background: url('/images/Group\ 4.png'), lightgray 0px -47.083px / 100% 112.971% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.my-skill h2{
+    text-align: center;
+    padding-block: 10px;
+}
+.progress-bar{
+    margin-block: 15px;
+}
+.skill-description p{
+    text-align: justify;
+}
+.skill-set p{
+    margin-bottom: 5px;
+}
+.skill-text{
+    display: flex;
+}
+.per{
+width: 50%;
+}
+.per p{
+    width: fit-content;
+    float: right;
+}
+.skill{
+    width: 50%;
+
+}
+.skill p{
+    width: fit-content;
+}
+/* Animation Start Here */
+@keyframes progressbar {
+    from{
+        width: 15%;
+    }
+
+    
+}
+.progress-bar{
+    animation-name: progressbar;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+/* .progress{
+    position: relative;
+    z-index: 0;
+}
+.persentage{
+    position: absolute;
+    top:-10px;
+    right:0;
+    z-index:1;
+    color: #b22727 !important;
+    overflow: visible;
+
+} */
