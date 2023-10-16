@@ -156,20 +156,28 @@ width: 50%;
 }
 .single-image{
     position: relative;
+    cursor: pointer;
 }
-.view{
+.hidden{
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    text-align: center;
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+.view{
     margin: auto;
     color: aliceblue;
     background: transparent;
     padding: 5px 10px;
     border: 1px solid #ffff;
     border-radius: 30px;
-    width: 20%;
+    width: max-content;
     height: 14%;
 
 
