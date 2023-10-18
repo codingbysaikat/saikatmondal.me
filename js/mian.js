@@ -11,13 +11,27 @@
 
         }
       });
+      $(window).scroll(function(){
+        if(is_screen('.my-skill')){
+          console.log('ture');
+        }else{
+          console.log('false');
+        }
+
+
+      });
+
       function is_screen(element){
-
-        
-        return false;     
+        var element_distance = $(element).offset();
+        var element_top = element_distance.top;
+        var scroll_height = document.documentElement.scrollTop;
+        var window_height =  $(window).innerHeight();
+        var lenght = element_top - scroll_height;
+        if(window_height<lenght){
+          return false;
+        }
+        return true;    
       }
-
-
   })})(jQuery);
 // type js plugin code here
   var typed = new Typed('#element', {
