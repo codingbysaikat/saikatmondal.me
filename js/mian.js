@@ -3,7 +3,7 @@
       $('.single-image').hover(function(){
         var status = $(this).children('.hidden').css('visibility');
         var image_url = $(this).children('img').attr('src');
-        if(status== 'hidden'){
+        if(status == 'hidden'){
           $(this).children('.hidden').css('visibility','visible');
           $('.modal-content > .single-image img').attr('src',image_url);
         }else{
@@ -11,11 +11,14 @@
 
         }
       });
+      if(is_screen('.my-skill')){
+        $('.addanimation').addClass('progress-bar');
+      }
       $(window).scroll(function(){
         if(is_screen('.my-skill')){
-          console.log('ture');
+          $('.addanimation').addClass('progress-bar');
         }else{
-          console.log('false');
+          $('.addanimation').removeClass('progress-bar');
         }
 
 

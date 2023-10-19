@@ -130,7 +130,7 @@ width: 50%;
 }
 .progress-bar{
     animation-name: progressbar;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-timing-function: ease-out;
 }
 .protfolio{
