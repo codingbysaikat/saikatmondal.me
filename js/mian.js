@@ -1,43 +1,67 @@
-;(function($){
-    $(document).ready(function(){ 
-      $('.single-image').hover(function(){
-        var status = $(this).children('.hidden').css('visibility');
-        var image_url = $(this).children('img').attr('src');
-        if(status == 'hidden'){
-          $(this).children('.hidden').css('visibility','visible');
-          $('.modal-content > .single-image img').attr('src',image_url);
-        }else{
-          $('.hidden').css('visibility','hidden');
+; (function ($) {
+  $(document).ready(function () {
+    //IMAGE HOVER EFFECT HERE
+    $('.single-image').hover(function () {
+      var status = $(this).children('.hidden').css('visibility');
+      var image_url = $(this).children('img').attr('src');
+      if (status == 'hidden') {
+        $(this).children('.hidden').css('visibility', 'visible');
+        $('.modal-content > .single-image img').attr('src', image_url);
+      } else {
+        $('.hidden').css('visibility', 'hidden');
 
-        }
-      });
-      if(is_screen('.my-skill')){
+      }
+    });
+    // IS SCREEN EVENT START HERE
+    if (is_screen('.addanimation')) {
+      $('.addanimation').addClass('progress-bar');
+    }
+    $(window).scroll(function () {
+      if (is_screen('.addanimation')) {
         $('.addanimation').addClass('progress-bar');
+      } else {
+        $('.addanimation').removeClass('progress-bar');
       }
-      $(window).scroll(function(){
-        if(is_screen('.my-skill')){
-          $('.addanimation').addClass('progress-bar');
-        }else{
-          $('.addanimation').removeClass('progress-bar');
+
+
+    });
+ 
+
+    // CLICK EVENT HERE
+    var display_class = 'All';
+    var projecct_menu = $('.projecct-menu > ul > li');
+    projecct_menu.each(function () {
+      $(this).click(function () {
+        var item_text = $(this).text();
+        if(item_text != display_class){
+          var lower_case = display_class.toLowerCase();
+          $("."+lower_case).addClass('img-hidden');
+
+
         }
+        console.log(item_text);
+      })
+
+    });
 
 
-      });
-
-      function is_screen(element){
-        var element_distance = $(element).offset();
-        var element_top = element_distance.top;
-        var scroll_height = document.documentElement.scrollTop;
-        var window_height =  $(window).innerHeight();
-        var lenght = element_top - scroll_height;
-        if(window_height<lenght){
-          return false;
-        }
-        return true;    
+    function is_screen(element) {
+      var element_distance = $(element).offset();
+      var element_top = element_distance.top;
+      var scroll_height = document.documentElement.scrollTop;
+      var window_height = $(window).innerHeight();
+      var lenght = element_top - scroll_height;
+      if (window_height < lenght) {
+        return false;
       }
-  })})(jQuery);
+      return true;
+    }
+  })
+
+  
+})(jQuery);
 // type js plugin code here
-  var typed = new Typed('#element', {
-    strings: ['Wordpress Theme Developer', 'WordPress Plugin Developer','WordPress SEO Expert and Specialist'],
-    typeSpeed: 100,
-  });
+var typed = new Typed('#element', {
+  strings: ['Wordpress Theme Developer', 'WordPress Plugin Developer', 'WordPress SEO Expert and Specialist'],
+  typeSpeed: 100,
+});

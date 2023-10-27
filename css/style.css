@@ -123,7 +123,7 @@ width: 50%;
 /* Animation Start Here */
 @keyframes progressbar {
     from{
-        width: 15%;
+        width: 25%;
     }
 
     
@@ -191,4 +191,6 @@ width: 50%;
     border: none;
     background: unset;
 }
-
+.img-hidden{
+    display: none !important;
+}
