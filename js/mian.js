@@ -12,6 +12,7 @@
 
       }
     });
+    
     // IS SCREEN EVENT START HERE
     if (is_screen('.addanimation')) {
       $('.addanimation').addClass('progress-bar');
@@ -28,18 +29,19 @@
  
 
     // CLICK EVENT HERE
-    var display_class = 'All';
+    var display_item = 'all';
     var projecct_menu = $('.projecct-menu > ul > li');
     projecct_menu.each(function () {
       $(this).click(function () {
         var item_text = $(this).text();
-        if(item_text != display_class){
-          var lower_case = display_class.toLowerCase();
-          $("."+lower_case).addClass('img-hidden');
-
-
+        item_text = item_text.toLowerCase();
+        item_text = item_text.split(" ").join('');
+        if(display_item != item_text){
+          $('.'+display_item).fadeOut();
+          $('.'+item_text).fadeIn();
+          display_item = item_text;
         }
-        console.log(item_text);
+        // console.log(item_text);
       })
 
     });
