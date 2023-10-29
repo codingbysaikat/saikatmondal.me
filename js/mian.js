@@ -37,16 +37,15 @@
         item_text = item_text.toLowerCase();
         item_text = item_text.split(" ").join('');
         if(display_item != item_text){
-          $('.'+display_item).fadeOut();
-          $('.'+item_text).fadeIn();
+          $('.'+display_item).removeClass('img-show')
+          $('.'+item_text).addClass('img-show');
           display_item = item_text;
         }
         // console.log(item_text);
       })
 
     });
-
-
+    
     function is_screen(element) {
       var element_distance = $(element).offset();
       var element_top = element_distance.top;
