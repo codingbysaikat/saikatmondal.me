@@ -37,7 +37,7 @@ padding-inline: 10px;
     font-size: 35px;
 }
 .banner{
-    background: url('/images/Rectangle\ 3.png'), lightgray 50%;
+    background: url('../images/Rectangle\ 3.png'), lightgray 50%;
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -90,7 +90,7 @@ padding-inline: 10px;
 }
 /* My skill*/
 .my-skill{
-    background: url('/images/Group\ 4.png'), lightgray 0px -47.083px / 100% 112.971% no-repeat;
+    background: url('../images/Group\ 4.png'), lightgray 0px -47.083px / 100% 112.971% no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -199,16 +199,7 @@ width: 50%;
     border: none;
     background: unset;
 } 
-.all{
-    display: none !important;
-}
-.seo{
-    display: none !important;
-}
-.wordpress{
-    display: none !important;
-}
-.digitalmarkting{
+.all, .seo , .wordpress , .digitalmarketing{
     display: none !important;
 }
 .items{
@@ -220,6 +211,7 @@ width: 50%;
 .img-show{
     display: flex !important;
 }
+<<<<<<< HEAD
 /* My Blog Css start here*/
 .my-blog{
     background: var(--main-bg);
@@ -292,3 +284,8 @@ width: 50%;
     display: flex;
     justify-content: space-around;
 }
+=======
+.modal-dialog{
+    max-width: 850px !important;
+}
+>>>>>>> b72edfc507f8a1f785aadb37f54cd6d08b5fce55

@@ -57,7 +57,10 @@
       }
       return true;
     }
-  })
+  });
+  var images = [
+    
+  ];
 
   
 })(jQuery);
