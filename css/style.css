@@ -211,7 +211,6 @@ width: 50%;
 .img-show{
     display: flex !important;
 }
-<<<<<<< HEAD
 /* My Blog Css start here*/
 .my-blog{
     background: var(--main-bg);
@@ -284,8 +283,6 @@ width: 50%;
     display: flex;
     justify-content: space-around;
 }
-=======
 .modal-dialog{
     max-width: 850px !important;
 }
->>>>>>> b72edfc507f8a1f785aadb37f54cd6d08b5fce55
