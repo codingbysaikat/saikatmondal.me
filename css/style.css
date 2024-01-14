@@ -7,10 +7,6 @@
     color: aliceblue !important;
 }
 /* commom css **/
-li{
-    list-style: none;
-
-}
 a{
     text-decoration: none !important;
 }
@@ -19,7 +15,7 @@ a{
 }
 /* nav css **/
 .navbar{
-    background: var(--main-bg) !important;
+    background: #332E2E;
     overflow: auto;
 }
 .navbar ul>li{
@@ -151,6 +147,7 @@ width: 50%;
 .projecct-menu ul{
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 .projecct-menu ul li{
     padding: 5px 20px;
@@ -235,12 +232,13 @@ width: 50%;
     height: 100%;
 }
 .bl-tittle{
-    text-align: left;
+    text-align:left;
     margin: 0;
 }
 .excerpt{
     font-weight: 300;
     margin-bottom: 10px;
+    text-align: justify;
     
 }
 .meta-data{
@@ -293,11 +291,12 @@ input{
     background: #F4F1F1;
     border: 1px solid #fff;
     border-radius: 5px;
+    color: #332E2E !important;
+    padding: 3px;
+   
 }
 input[type=email]{
     width: 100%;
-   
-
 }
 textarea{
     resize: horizontal;
@@ -305,6 +304,10 @@ textarea{
     background: #F4F1F1;
     border: 1px solid #fff;
     border-radius: 5px;
+    min-height: 100px;
+    color: #332E2E !important;
+    padding: 5px;
+    
 }
 .submit{
     text-align: center;
@@ -316,6 +319,7 @@ input[type=submit]{
     border: 1px solid #fff;
     padding: 5px 30px;
     border-radius: 22px;
+    color: #fff !important;
 }
 .full-name , .mail, .text-area{
     margin-bottom: 5px;
@@ -323,8 +327,51 @@ input[type=submit]{
 footer{
     background: #332E2E;
 }
-footer p{
+.main-footer{
+    padding-top: 10px;
+}
+.main-archive ul li a{
+    text-decoration: underline;
+    
+}
+.footer-archive{
+    display: flex;
+   
+}
+.end-footer{
     margin: 0;
     padding-block: 10px;
     text-align: center;
+}
+/* Blog css  */
+.blog-title{
+    text-transform: uppercase;
+    text-align: center;
+}
+.out-of-home{
+    padding-block: 80px;
+}
+.main-body{
+    background: rgba(51, 46, 46, 0.94);
+    padding-block: 10px;
+}
+.main-blog{
+    border: 1px solid #fff;
+    padding: 0 !important;
+   
+}
+.section-head{
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.bp-single-card{
+    padding: 0 !important;
+}
+.blog-content{
+    padding: 10px;
+}
+.main-section{
+    margin-block: 20px;
 }
