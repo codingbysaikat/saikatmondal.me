@@ -162,6 +162,8 @@ width: 50%;
 .single-image{
     position: relative;
     cursor: pointer;
+    margin: 0;
+    height: 300px;
 }
 .hidden{
     width: max-content;
@@ -268,6 +270,7 @@ width: 50%;
 /* contact form css */
 .contact-form{
     background: var(--main-bg);
+    padding-block: 20px;
 
     
 }
@@ -281,8 +284,47 @@ width: 50%;
 }
 .full-name{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
 }
 .modal-dialog{
     max-width: 850px !important;
+}
+input{
+    background: #F4F1F1;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+input[type=email]{
+    width: 100%;
+   
+
+}
+textarea{
+    resize: horizontal;
+    width: 100%;
+    background: #F4F1F1;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.submit{
+    text-align: center;
+}
+input[type=submit]{
+    text-align: center;
+    margin-inline: auto;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 5px 30px;
+    border-radius: 22px;
+}
+.full-name , .mail, .text-area{
+    margin-bottom: 5px;
+}
+footer{
+    background: #332E2E;
+}
+footer p{
+    margin: 0;
+    padding-block: 10px;
+    text-align: center;
 }
