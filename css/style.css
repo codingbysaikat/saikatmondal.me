@@ -353,12 +353,15 @@ footer{
 }
 .main-body{
     background: rgba(51, 46, 46, 0.94);
-    padding-block: 10px;
+    padding-block: 20px;
 }
 .main-blog{
-    border: 1px solid #fff;
+    
     padding: 0 !important;
    
+}
+.section{
+    border: 1px solid #fff;
 }
 .section-head{
     border-bottom: 1px solid #fff;
@@ -374,4 +377,38 @@ footer{
 }
 .main-section{
     margin-block: 20px;
+}
+/* Search form */
+.form-inline{
+    display: flex;
+}
+.form-group{
+    width: 80%;
+}
+.form-group .form-control{
+    border: unset;
+    border-radius: unset;
+}
+#searchsubmit{
+    border-radius: unset;
+    background: #A41B1B;
+    border: unset;
+}
+/* populer post section */
+.p-title{
+    font-size: 25px;
+    padding-block: 10px;
+}
+.single-list{
+    display: flex;
+}
+.post-thumbline{
+    width: 26%;
+}
+.post-data{
+    height: fit-content;
+}
+.post-data .post-title{
+    font-size: 16px;
+    margin: 0;
 }
