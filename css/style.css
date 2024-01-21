@@ -422,3 +422,42 @@ footer{
 .date{
     margin: 0;
 }
+/* tags area */
+.tags-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.single-tag{
+    list-style: none;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    margin-inline: 5px;
+    margin-block: 5px;
+    padding: 5px;
+}
+/* social icon section start here */
+.social-icon-section{
+    border: 1px solid #fff;
+}
+.blog-media{
+    padding-block: 15px;
+    
+}
+/* social icon section end here */
+/* news letter subscribtion form start here */
+.news-letter-box{
+    border: 1px solid #ffff;
+    padding: 10px;
+    margin-block: 10px;
+}
+.news-letter-box p{
+    font-size: 13px;
+}
+.subscription-box{
+    width: 60%;
+}
+/* news letter sebscription form end here */
+.side-bar-ads img{
+    width: 100%;
+}
