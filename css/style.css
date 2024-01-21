@@ -369,8 +369,8 @@ footer{
     justify-content: space-between;
     padding: 8px;
 }
-.bp-single-card{
-    padding: 0 !important;
+.bl-single-card{
+    margin-block: 5px;
 }
 .blog-content{
     padding: 10px;
@@ -401,14 +401,24 @@ footer{
 }
 .single-list{
     display: flex;
+    margin-block: 10px;
 }
 .post-thumbline{
     width: 26%;
 }
 .post-data{
     height: fit-content;
+    padding-left: 5px;
 }
 .post-data .post-title{
     font-size: 16px;
+    margin: 0;
+    line-height: 21px;
+}
+.meta-data{
+    margin: 0;
+    padding: 0;
+}
+.date{
     margin: 0;
 }
