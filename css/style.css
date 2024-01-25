@@ -596,4 +596,32 @@ li p{
     padding-block: 10px;
 }
 /* recommed css end here */
+/* comments list css start here */
+.comment-list-section{
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-block: 20px;
+}
+.commenter-img img{
+    width: 100%;
+}
+.commenter-meta-data{
+    padding-left: 0 !important;
+}
+.name-date, .comment{
+    margin: 0;
+    text-align: justify;
+    width: 100%;
+}
+.replay-btn, .comment{
+    font-size: 12px;
+    font-weight: 200;
+}
+.replay-btn{
+    border: 1px solid #ffff;
+    padding: 3px;
+    margin-block: 5px !important;
+    display: inline-block;
+}
+/* comments list css end here */
 /* end single page css here */
