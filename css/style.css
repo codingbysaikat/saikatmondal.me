@@ -624,4 +624,10 @@ li p{
     display: inline-block;
 }
 /* comments list css end here */
+/* comment-box css start here */
+.comment-box-section{
+    border: 1px solid #ffff;
+    padding: 20px;
+}
+/* comment-box css end here */
 /* end single page css here */
