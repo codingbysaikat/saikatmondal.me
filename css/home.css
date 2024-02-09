@@ -1,0 +1,331 @@
+
+.go-profile{
+    padding: 10px;
+    border: 1px solid #ffff;
+    border-radius: 25px;
+    flex-shrink: 0;
+
+}
+.go-profile:is(:hover,:focus){
+    background: #A41B1B !important;
+    border: none;
+}
+.about{
+    background: var(--main-bg);
+}
+.about h2{
+    text-align: center;
+    padding-block: 20px;
+
+}
+.description p{
+    text-align: justify;
+}
+.my-photo img{
+    width: 100%;
+    height: 400px;
+}
+.contact-me{
+    border: 1px solid #ffff;
+    padding: 7px 15px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.contact-me:is(:hover,:focus){
+    border-color: #A41B1B;
+    background: #A41B1B;
+}
+.social-media{
+    display: flex;
+    padding-block: 30px;
+}
+.social-media .social-icon{
+    width: 70px;
+    padding-inline: 10px;
+}
+/* My skill*/
+.my-skill{
+    background: url('../images/Group\ 4.png'), lightgray 0px -47.083px / 100% 112.971% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.my-skill h2{
+    text-align: center;
+    padding-block: 10px;
+}
+.progress-bar{
+    margin-block: 15px;
+}
+.skill-description p{
+    text-align: justify;
+}
+.skill-set p{
+    margin-bottom: 5px;
+}
+.skill-text{
+    display: flex;
+}
+.per{
+width: 50%;
+}
+.per p{
+    width: fit-content;
+    float: right;
+}
+.skill{
+    width: 50%;
+
+}
+.skill p{
+    width: fit-content;
+}
+/* Animation Start Here */
+@keyframes progressbar {
+    from{
+        width: 25%;
+    }
+
+    
+}
+.progress-bar{
+    animation-name: progressbar;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+/*My protfilo*/
+.protfolio{
+    background: #494545;
+}
+.protfolio h2{
+    text-align: center;
+    padding-block: 10px;
+}
+.projecct-menu{
+    text-align:center;
+}
+.projecct-menu ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+}
+.projecct-menu ul li{
+    padding: 5px 20px;
+    border: 1px solid #ffff;
+    margin-inline: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.single-image{
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    height: 300px;
+}
+.hidden{
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+.view{
+    margin: auto;
+    color: aliceblue;
+    background: transparent;
+    padding: 5px 10px;
+    border: 1px solid #ffff;
+    border-radius: 30px;
+    width: max-content;
+    height: 14%;
+
+
+}
+.col-md-4 .single-image{
+    margin-bottom: 20px;
+}
+.single-image img{
+    width: 100%;
+    height: 100%;
+}
+.close{
+    color: black !important;
+    border: none;
+    background: unset;
+} 
+.all, .seo , .wordpress , .digitalmarketing{
+    display: none !important;
+}
+.items{
+    transform: 1s;
+}
+.img-hidden{
+    display: none !important;
+}
+.img-show{
+    display: flex !important;
+}
+/* My Blog Css start here*/
+.my-blog{
+    background: var(--main-bg);
+}
+.myblog-tittle{
+    text-align: center;
+    padding-block: 20px;
+}
+.bl-single-card{
+    background: #5C5656;
+    border-radius: 2px;
+    padding-inline: 10px;
+
+}
+.thumbnail-box{
+    padding-block: 10px;
+}
+.thumbnail{
+    width: 100%;
+    height: 100%;
+}
+.bl-tittle{
+    text-align:left;
+    margin: 0;
+}
+.excerpt{
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: justify;
+    
+}
+.meta-data{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.author-name ,.post-date{
+    margin: 0;
+}
+/* loading btn css */
+.loading-btn{
+    background: transparent;
+    border: 1px solid #fff;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+    margin-inline: auto;
+    margin-top:5px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    border-radius: 30px;
+}
+/* contact form css */
+.contact-form{
+    background: var(--main-bg);
+    padding-block: 20px;
+
+    
+}
+.main-form{
+    width: 50%;
+    margin: auto;
+
+}
+.ct-tittle{
+    text-align: center;
+}
+.full-name{
+    display: flex;
+    justify-content:space-between;
+}
+.modal-dialog{
+    max-width: 850px !important;
+}
+input{
+    background: #F4F1F1;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #332E2E !important;
+    padding: 3px;
+   
+}
+
+input[type=email], input[type=text] {
+    width: 100%;
+}
+textarea{
+    resize: horizontal;
+    width: 100%;
+    background: #F4F1F1;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    min-height: 100px;
+    color: #332E2E !important;
+    padding: 5px;
+    
+}
+.submit{
+    text-align: center;
+}
+input[type=submit]{
+    text-align: center;
+    margin-inline: auto;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 5px 30px;
+    border-radius: 22px;
+    color: #fff !important;
+}
+.full-name , .mail, .text-area{
+    margin-bottom: 5px;
+}
+/* Responsive css start here */
+@media only screen and (max-width:1025px) {
+    .skill-description{
+        margin-bottom: 25px;
+    }
+    
+}
+
+@media only screen and (max-width:992px) {
+
+    .projecct-menu ul li{
+        margin-inline: 3px;
+    }
+    .main-form{
+        width: 80%;
+    }
+
+
+  }
+  @media only screen and (max-width:768px) {
+    
+    .p-manu{
+        font-size: 10px;
+    }
+    .description{
+        padding-block: 10px;
+    }
+
+  }
+  @media only screen and (max-width:507px) {
+    
+    .contact-me{
+        font-size: 6px;
+    }
+
+  }
+  @media only screen and (max-width:442px) {
+    
+    .contact-me{
+        font-size: 5px;
+    }
+
+  }
+/* Responsive css end here */

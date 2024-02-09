@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue !important;
+}
+/* commom css **/
+a{
+    text-decoration: none !important;
+}
+:root{
+    --main-bg:#494545;
+}
+body{
+    background:var(--main-bg) !important;
+}
+/* nav css **/
+.navbar{
+    background: #332E2E;
+    overflow: auto;
+}
+.navbar ul>li{
+padding-inline: 10px;
+}
+.hireme{
+    background: #A41B1B !important;
+    transform: skewX(-25deg);
+    padding-inline: 20px;
+}
+
+
+#element{
+    display: inline;
+}
+.typed-cursor{
+    font-size: 35px;
+}
+.banner{
+    background: url('../images/Rectangle\ 3.png'), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-block: 150px;
+    background-attachment: fixed;
+}
+
+/* footer css */
+footer{
+    background: #332E2E;
+}
+.main-footer{
+    padding-top: 10px;
+}
+.main-archive ul li a{
+    text-decoration: underline;
+    
+}
+.footer-archive{
+    display: flex;
+   
+}
+.end-footer{
+    margin: 0;
+    padding-block: 10px;
+    text-align: center;
+}
+.navbar-toggler{
+    background-color: #fff !important;
+}
+@media only screen and (max-width:992px) {
+    .hireme{
+        width: fit-content;
+        padding-inline: 10px !important;
+        transform: unset;
+    }
+}
